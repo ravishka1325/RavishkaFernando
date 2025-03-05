@@ -22,7 +22,7 @@ const App = () => {
   }, [])
 
   return (
-    <Router basename="/ravishkafernando">
+    <Router basename="//">
       {loading ? (
         <div className="loader">
           <div className="loader-content">
