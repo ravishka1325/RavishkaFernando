@@ -1,0 +1,94 @@
+.footer {
+    background-color: var(--background-light);
+    padding: 50px 20px 20px;
+    margin-top: 50px;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 30px;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: var(--text-primary);
+    position: relative;
+    display: inline-block;
+  }
+  
+  .footer-section h3::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    border-radius: 2px;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-link {
+    width: 40px;
+    height: 40px;
+    background: var(--background-dark);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    color: var(--text-secondary);
+  }
+  
+  .social-link:hover {
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    color: white;
+    transform: translateY(-3px);
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .footer-links li a {
+    color: var(--text-secondary);
+    transition: all 0.3s ease;
+  }
+  
+  .footer-links li a:hover {
+    color: var(--primary-color);
+    padding-left: 5px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+  }
+  
+  .footer-bottom p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+  }
+  
+  @media (min-width: 768px) {
+    .footer-content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  
